@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aqua-Elektron/Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link th:href="@{lib/animate/animate.min.css}" rel="stylesheet">
+    <link th:href="@{lib/owlcarousel/assets/owl.carousel.min.css}" rel="stylesheet">
+    <link th:href="@{lib/lightbox/css/lightbox.min.css}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link th:href="@{css2/bootstrap.min.css}" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link th:href="@{css2/style.css}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>112 Hans Strijdom St, Vanderbijlpark C. C, Vanderbijlpark, 1900</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 06.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+27 76 159 5384    aquaelektron@gmail.com</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https:/www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <!-- <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a th:href="@{/}" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img th:src="@{img/IMG-20231016-WA0007.jpg}" alt="" height="70" width="80">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a th:href="@{/}" class="nav-item nav-link active">Home</a>
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">VUT</a>
+                    <div class="dropdown-menu fade-up m-0">
+                        <a th:href="@{/prospectors}" class="dropdown-item"> Prospectors</a>
+                        <a th:href="@{/guidL}" class="dropdown-item">Student Fee Guideline</a>
+                        <a th:href="@{/BD}" class="dropdown-item">VUT Banking Details</a>
+                        <a th:href="@{/ContD}" class="dropdown-item">VUT contact Details</a>
+                        
+                    </div>
+                </div>
+                <a th:href="@{/contact}" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" th:src="@{img/amber.jpg}" alt="" height="60" width="60">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome to Aqua Elektron</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Amberfield Village</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2"> Where comfort meets community, making your University years truly memorable.</p>
+                                <a th:href="@{/first}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Now</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" th:src="@{img/moahi.jpg}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome to Aqua Elektron</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Moahi Village</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Moahi offers more than just student accommodation; it provides a welcoming haven where academic success and comfortable living unite.</p>
+                                <a th:href="@{/firstM}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Now</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" th:src="@{img/park.JPG}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome to Aqua Elektron</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Park Village</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Where comfortable living meets student excellence, creating a home away from home..</p>
+                                <a th:href="@{/firstP}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Now</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" th:src="@{img/Taung.JPG}" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome to Aqua Elektron</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Taung Village</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Where students find comfort in every corner and a home away from home.</p>
+                                <a th:href="@{/firstT}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Now</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    
+
+
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" th:src="@{img/aqua.png}" style="object-fit: cover; border-radius: 5%;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">About Us</h1>
+                        </div>
+                        <p class="mb-4 pb-2">At Aqua Elektron, we're more than just accommodation; we're your gateway to a vibrant university experience. With our four exceptional residences – Park Village, Amberfield Village, Taung Village, and Moahi Village – we've redefined student living at Vaal University of Technology. Our commitment to comfort, community, and convenience ensures that every student can thrive in an environment that feels like home. Discover a world of academic support, social connections, and a place to create unforgettable memories. Choose Aqua Elektron, where student life meets extraordinary living.</p>
+                        <div class="row g-4 mb-4 pb-2">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-users fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">2736</h2>
+                                        <p class="fw-medium mb-0">Student Capacity</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">525</h2>
+                                        <p class="fw-medium mb-0">Rooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1 class="display-5 mb-5">Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" th:src="@{img/wifi.jpg}" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">WI-FI</h4>
+                            <p>Stay connected with lightning-fast, unlimited WiFi – your gateway to seamless online learning, streaming, and staying in touch with loved ones. At Aqua Elektron, we make sure buffering is a thing of the past, so you can focus on what matters most.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" th:src="@{img/buss.jpg}" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Transportation</h4>
+                            <p>Enjoy stress-free commutes with our complimentary transport services! Hop on our busses and sprinters, offering free rides to and from campus, so you can focus on what matters most – your education.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" th:src="@{img/Security-Guard.jpg}" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Security</h4>
+                            <p>Your safety is our top priority. Our comprehensive security services, both at the gate and inside our premises, provide round-the-clock protection, ensuring you enjoy peace of mind throughout your stay.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" th:src="@{img/water.webp}" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Backup Water Supply</h4>
+                            <p>Stay worry-free with our Backup Water Supply Service. When municipal water interruptions strike, Aqua Elektron ensures you never run dry, guaranteeing a continuous flow of water to keep your daily life uninterrupted.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" th:src="@{img/moa2.jpg}" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Laundry Room</h4>
+                            <p>Unleash the convenience of 24/7 laundry service at Aqua Elektron. Our fully equipped laundry room, featuring top-of-the-line washing and drying machines, puts student convenience first. Clean, fresh, and always accessible – we're here to make your life easier!.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" th:src="@{img/cafe.jpg}" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Cafeteria</h4>
+                            <p>Indulge in a world of flavor at our student-friendly cafeteria. From delicious, affordable meals to a cozy hangout spot, we're here to fuel your study sessions and satisfy your taste buds. Explore a diverse menu, grab a bite, and enjoy the perfect blend of taste and convenience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" th:src="@{img/face.jpg}" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">Our Social Media</h1>
+                        </div>
+                        <p class="mb-4 pb-2">Looking for the inside scoop on our amazing student accommodations? Look no further! Join our vibrant community on WhatsApp and stay in the loop with instant updates, exclusive offers, and a warm, welcoming atmosphere. If Facebook is more your style, join our dynamic group for even more information, engaging discussions, and a chance to connect with fellow students. Don't miss out on the latest updates and special offers – join us today and experience the difference in student living!</p>
+                        <div class="row g-4">
+
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-user-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-2">Whatsapp Group Chat</p>
+                                        <a th:href="@{https://chat.whatsapp.com/GrOFAQ2RqAYHt16GNqsbBl}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Join Group</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-user-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-2">Facebook Group</p>
+                                        <a th:href="@{https://www.facebook.com/groups/1065885931239104}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Join Group</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">Book Your Room</h1>
+                        </div>
+                        <p class="mb-4 pb-2">Unlock your ideal student experience with us! Book a room today and secure your place in one of our vibrant residences. From comfortable living spaces to a thriving community, we're here to make your university journey unforgettable. Don't miss out on the adventure – reserve your room now and step into a world of academic success and lasting memories</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-2">Amberfield Village</p>
+                                        <a th:href="@{/first}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-user-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-2">Park Village</p>
+                                        <a th:href="@{/firstP}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-drafting-compass fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-2">Moahi Village</p>
+                                        <a th:href="@{/firstM}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-headphones fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-2">Taung Village</p>
+                                        <a th:href="@{/firstT}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" th:src="@{img/book.png}" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+    
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1 class="display-5 mb-5">Our Rooms</h1>
+            </div>
+            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">All</li>
+                        <li class="mx-2" data-filter=".first">Amberfield Village</li>
+                        <li class="mx-2" data-filter=".second">Park Village</li>
+                        <li class="mx-2" data-filter=".third">Taung Village</li>
+                        <li class="mx-2" data-filter=".fourth">Moahi Village</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" th:src="@{img/am1.jpg}" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" th:href="@{img/am1.jpg}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Amberfield Village</p>
+                            <h5 class="lh-base mb-0">Bedroom</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" th:src="@{img/am2.jpg}" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" th:href="@{img/am2.jpg}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Amberfield Village</p>
+                            <h5 class="lh-base mb-0">Study table</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" th:src="@{img/pv1.jpg}" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" th:href="@{img/pv1.jpg}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Park Village</p>
+                            <h5 class="lh-base mb-0">Bedroom</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" th:src="@{img/pv2.jpg}" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" th:href="@{img/pv2.jpg}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Park Village</p>
+                            <h5 class="lh-base mb-0">Toilet and Shower</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" th:src="@{img/tv1.jpg}" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" th:href="@{img/tv1.jpg}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Taung Village</p>
+                            <h5 class="lh-base mb-0">Bedroom</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item third wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" th:src="@{img/tv2.jpg}" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" th:href="@{img/tv2.jpg}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Taung Village</p>
+                            <h5 class="lh-base mb-0">TV Room</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item fourth wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" th:src="@{img/moa1.jpg}" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" th:href="@{img/moa1.jpg}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Moahi Village</p>
+                            <h5 class="lh-base mb-0">Kitchen</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item fourth wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" th:src="@{img/moa2.jpg}" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" th:href="@{img/moa2.jpg}" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Moahi Village</p>
+                            <h5 class="lh-base mb-0">Laundry Room</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>112 Hans Strijdom St, Vanderbijlpark C. C, Vanderbijlpark, 1900</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+27 76 159 5384</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>aquaelektron@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https:/www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Aqua Elektron</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="#">Primo Rams</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script th:src="@{https://code.jquery.com/jquery-3.4.1.min.js}"></script>
+    <script th:src="@{https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{lib/wow/wow.min.js}"></script>
+    <script th:src="@{lib/easing/easing.min.js}"></script>
+    <script th:src="@{lib/waypoints/waypoints.min.js}"></script>
+    <script th:src="@{lib/counterup/counterup.min.js}"></script>
+    <script th:src="@{lib/owlcarousel/owl.carousel.min.js}"></script>
+    <script th:src="@{lib/isotope/isotope.pkgd.min.js}"></script>
+    <script th:src="@{lib/lightbox/js/lightbox.min.js}"></script>
+
+    <!-- Template Javascript -->
+    <script th:src="@{js2/main.js}"></script>
+</body>
+
+</html>

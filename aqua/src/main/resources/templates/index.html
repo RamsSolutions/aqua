@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- theme meta -->
+    <meta name="theme-name" content="focus" />
+    <title>Aqua Electron-admin</title>
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+    <!-- Styles -->
+    <link th:href="@{/css/lib/calendar2/pignose.calendar.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/lib/chartist/chartist.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/lib/font-awesome.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/lib/themify-icons.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/lib/owl.carousel.min.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/lib/owl.theme.default.min.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/lib/weather-icons.css}" rel="stylesheet" type="text/css"/>
+    <link th:href="@{/css/lib/menubar/sidebar.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/lib/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/lib/helper.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/style.css}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+    <div class="nano">
+        <div class="nano-content">
+            <ul>
+                <div class="logo"><a th:href="@{/adminHome}">
+                    <img th:src="@{/images/IMG-20231016-WA0007.jpg}" alt="" width="150" height="150" />
+                    <li class="label">Aqua Elektron</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-home"></i> Dashboard </a></a>
+
+                    </li>
+
+                    <li class="label">Apps</li>
+
+                    <li><a th:href="@{event-calender}"><i class="ti-calendar"></i> Calender </a></li>
+                    <li><a th:href="@{profile}"><i class="ti-user"></i> Profile</a></li>
+
+                    <li><a class="sidebar-sub-toggle"><i class="ti-layout-grid4-alt"></i>Reservations<span
+                            class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a th:href="@{/admin/list-all-students}">Amberfield village</a></li>
+
+                            <li><a th:href="@{/adminT/list-all-studentsT}">Taung village</a></li>
+                            <li><a th:href="@{/adminP/list-all-studentsP}">Park Village</a></li>
+                            <li><a th:href="@{/adminM/list-all-studentsM}">Moahi Village</a></li>
+                        </ul>
+                    </li>
+
+                    <!--                    <li><a class="sidebar-sub-toggle"><i class="ti-target"></i> Admin <span-->
+                    <!--                            class="sidebar-collapse-icon ti-angle-down"></span></a>-->
+                    <!--                        <ul>-->
+                    <!--                            <li><a href="page-login.html">Login</a></li>-->
+                    <!--                            <li><a href="page-register.html">Register</a></li>-->
+                    <!--                            <li><a href="page-reset-password.html">Forgot password</a></li>-->
+                    <!--                        </ul>-->
+                    <!--                    </li>-->
+                    <!--                    <li><a href="#"><i class="ti-file"></i> Documentation</a></li>-->
+                    <!--                    <li><a><i class="ti-close"></i> Logout</a></li>-->
+                </div>
+
+            </ul>
+        </div>
+    </div>
+</div>
+    <!-- /# sidebar -->
+
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="float-left">
+                        <div class="hamburger sidebar-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="float-right">
+
+                        <div class="dropdown dib">
+
+                        <div class="dropdown dib">
+                            <div class="header-icon" data-toggle="dropdown">
+                                <span class="user-avatar">Primo RamSs
+
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 p-r-0 title-margin-right">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <h1>Hello, <span>Welcome Here</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                    <div class="col-lg-4 p-l-0 title-margin-left">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                    <li class="breadcrumb-item active">Home</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                </div>
+                <!-- /# row -->
+                <section id="main-content">
+                    <div class="row">
+                        
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="stat-widget-one">
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">Aqua Elektron</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="stat-widget-one">
+                                    <div class="stat-icon dib"><i class="ti-user color-primary border-primary"></i>
+                                    </div>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">Total Students</div>
+                                        <div class="stat-digit">2736</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="stat-widget-one">
+                                    <div class="stat-icon dib"><i class="ti-layout-grid2 color-pink border-pink"></i>
+                                    </div>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">Total Buildings</div>
+                                        <div class="stat-digit">4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card">
+                                <div class="stat-widget-one">
+                                    <div class="stat-icon dib"><i class="ti-link color-danger border-danger"></i></div>
+                                    <div class="stat-content dib">
+                                        <div class="stat-text">Total Rooms</div>
+                                        <div class="stat-digit">525</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card bg-primary">
+                                        <div class="weather-widget">
+                                            <div id="weather-one" class="weather-one p-22"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="testimonial-widget-one p-17">
+                                            <div class="testimonial-widget-one owl-carousel owl-theme">
+                                                <div class="item">
+                                                    <div class="testimonial-content">
+                                                        <div class="testimonial-text">
+                                                            <i class="fa fa-quote-left"></i> Coding is not just a skill; it's a lifestyle. It's a journey where you continuously learn, adapt, and create, breathing life into lines of code. <i class="fa fa-quote-right"></i>
+                                                        </div>
+                                                        <img class="testimonial-author-img"
+                                                             th:src="@{images/avatar/p1.jpg}" alt="" />
+                                                        <div class="testimonial-author">Primo Rmas</div>
+                                                        <div class="testimonial-author-position">Software Developer. Aqua Elektron
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="testimonial-content">
+                                                        <div class="testimonial-text">
+                                                            <i class="fa fa-quote-left"></i> It's in the lines of code where we craft the blueprint for software to reach its greatest heights, soaring on the wings of innovation and precision. <i class="fa fa-quote-right"></i>
+                                                        </div>
+                                                        <img class="testimonial-author-img"
+                                                             th:src="@{images/avatar/p1.jpg}" alt="" />
+                                                        <div class="testimonial-author">Primo Ram</div>
+                                                        <div class="testimonial-author-position">Software Developer. Aqua Elektron
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /# column -->
+
+                        <!-- /# column -->
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="year-calendar"></div>
+                                </div>
+                            </div>
+                            <!-- /# card -->
+                        </div>
+                        <!-- /# column -->
+
+                        <!-- /# column -->
+
+                    </div>
+                    <!-- /# row -->
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h4>Task</h4>
+
+                                </div>
+                                <div class="todo-list">
+                                    <div class="tdl-holder">
+                                        <div class="tdl-content">
+                                            <ul>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox"><i></i><span>22,Dec Publish The
+                                                            website</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox" checked><i></i><span>Start Allowing
+                                                            Students On Our Residences</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox"><i></i><span>Recently Our Maganement
+                                                            Programme Start</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox" checked><i></i><span>Check
+                                                            available space</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                </li>
+
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox" checked><i></i><span>Open Storage for
+                                                             students who left their staff</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox" checked><i></i><span>Connect with one new
+                                                            person</span>
+                                                        <a href='#' class="ti-close"></a>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <input type="text" class="tdl-new form-control"
+                                            placeholder="Write new item and hit 'Enter'...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- /# column -->
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="footer">
+                                <p>2018 © Aqua Elektron. - <a href="#">aquaelektron.com</a> - By Primo</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery vendor -->
+    <script th:src="@{/js/lib/jquery.min.js}"></script>
+    <script th:src="@{/js/lib/jquery.nanoscroller.min.js}"></script>
+    <!-- nano scroller -->
+    <script th:src="@{/js/lib/menubar/sidebar.js}"></script>
+    <script th:src="@{/js/lib/preloader/pace.min.js}"></script>
+    <!-- sidebar -->
+
+    <script th:src="@{/js/lib/bootstrap.min.js}"></script>
+    <script th:src="@{/js/scripts.js}"></script>
+    <!-- bootstrap -->
+
+    <script th:src="@{/js/lib/calendar-2/moment.latest.min.js}"></script>
+    <script th:src="@{/js/lib/calendar-2/pignose.calendar.min.js}"></script>
+    <script th:src="@{/js/lib/calendar-2/pignose.init.js}"></script>
+
+
+    <script th:src="@{/js/lib/weather/jquery.simpleWeather.min.js}"></script>
+    <script th:src="@{/js/lib/weather/weather-init.js}"></script>
+    <script th:src="@{/js/lib/circle-progress/circle-progress.min.js}"></script>
+    <script th:src="@{/js/lib/circle-progress/circle-progress-init.js}"></script>
+    <script th:src="@{/js/lib/chartist/chartist.min.js}"></script>
+    <script th:src="@{/js/lib/sparklinechart/jquery.sparkline.min.js}"></script>
+    <script th:src="@{/js/lib/sparklinechart/sparkline.init.js}"></script>
+    <script th:src="@{/js/lib/owl-carousel/owl.carousel.min.js}"></script>
+    <script th:src="@{/js/lib/owl-carousel/owl.carousel-init.js}"></script>
+    <!-- scripit init-->
+    <script th:src="@{/js/dashboard2.js}"></script>
+</body>
+
+</html>
